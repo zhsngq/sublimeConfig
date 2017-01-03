@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 header('Content-Type: text/json; charset=utf-8');
-echo CJSON::encode( ${1:this} ); exit;
+echo json_encode( \$${1:this} ); exit;
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>dj</tabTrigger>
