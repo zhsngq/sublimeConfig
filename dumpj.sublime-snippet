@@ -3,7 +3,7 @@
 header('Content-Type: text/json; charset=utf-8');
 echo json_encode(
         \$${1:this}
-    ); exit;
+); exit;
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>dj</tabTrigger>
