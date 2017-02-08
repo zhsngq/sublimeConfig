@@ -2,7 +2,7 @@
     <content><![CDATA[
 header('Content-Type: text/json; charset=utf-8');
 echo json_encode(
-        \$${1:this}
+    \$${1:this}
 ); exit;
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
