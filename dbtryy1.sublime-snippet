@@ -1,17 +1,17 @@
 <snippet>
     <content><![CDATA[
-\$transaction = Yii::\$app->getDb()->beginTransaction();
+\$transaction = Yii::app()->db->beginTransaction();
 try {
     \$${1:this}
     \$transaction->commit();
-    \$this->setMessage('保存成功', 'success', ['list']);
+    Yii::app()->user->setFlash('success', '操作成功！');
 } catch (\Exception \$e) {
     \$transaction->rollback();
-    \$this->setMessage(\$e->getMessage(), 'error');
+    Yii::app()->user->setFlash('error', '操作失败');
 }
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>dbtryy</tabTrigger>
+    <tabTrigger>dbtryy1</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.php</scope>
 </snippet>
