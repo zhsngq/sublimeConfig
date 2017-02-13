@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-die(var_dump(
+require('D:/vendor/autoload.php'); dump(
     \$${1:this}
-));
+);
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>dd</tabTrigger>
