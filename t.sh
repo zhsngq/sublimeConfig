@@ -25,8 +25,7 @@ function gitConflict(){
     echo '-------------> pop'
     git stash &&
     git pull &&
-    git stash pop && 
-    git pull &&
+    git stash pop 
     git status
     echo '[ERROR] git Conflict'
 }
