@@ -1,7 +1,6 @@
 #!/bin/bash
 source t.sh
 
-
 message=$(git status)
 echo $message
 res=$(equals 'Changes' "${message}")
