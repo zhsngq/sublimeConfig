@@ -10,9 +10,12 @@ function gitCommit() {
 echo 'update...' 
 message=(`git pull`)
 if [ "$message[0]"x = "Updating"x ]; then 
+    echo 'stash'
     git stash && 
+    echo 'pull'
     git pull &&
-    gitCommit 
+    echo 'gitCommit'
+    gitCommit  
     git stash pop 
 else 
     gitCommit
