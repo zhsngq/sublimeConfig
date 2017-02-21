@@ -15,7 +15,7 @@ function gitCommit() {
     res=$(equals 'rejected' "${message}") 
     if [ "${res}" == "Y" ] 
     then 
-        $(gitConflict)
+        echo $(gitConflict)
     else 
         echo '[OK] sublimt git' 
     fi
