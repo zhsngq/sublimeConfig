@@ -11,7 +11,7 @@ echo 'update...'
 message=(`git pull`)
 a="Already"
 b=$message[0]
-if test $[b] -eq $[a]
+if test a=b
 then 
     gitCommit
 else 
