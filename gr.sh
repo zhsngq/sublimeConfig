@@ -9,12 +9,13 @@ function gitCommit() {
 }
 echo 'update...' 
 message=(`git pull`)
-if [ "$message[0]"x = "Updating"x ]; then 
-    gitCommit
-else 
+if test $message[0] -eq "Updating" 
+then 
     git stash && 
     git pull 
     git stash pop 
+    gitCommit
+else 
     gitCommit
 fi
 
