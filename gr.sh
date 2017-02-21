@@ -13,6 +13,5 @@ if [ "$message[0]"x = "Updating"x ]; then
     git stash && 
     git pull &&
     git stash pop
-else
-    gitCommit
 fi
+gitCommit
