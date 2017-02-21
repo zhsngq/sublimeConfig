@@ -4,7 +4,8 @@ function gitCommit() {
     echo 'set message ..'
     read message &&
     git commit -m '$message' &&
-    git push
+    git push && 
+    echo 'OK'
 }
 echo 'update...' 
 message=(`git pull`)
