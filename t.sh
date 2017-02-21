@@ -14,7 +14,7 @@ function gitCommit() {
     git add . &&
     git commit -m $commitMessage &&
     git push && 
-    echo '[OK] sublimt git'
+    echo '[OK] sublimt git' 
 }
 
 function gitConflict(){
