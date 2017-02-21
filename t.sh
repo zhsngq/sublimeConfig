@@ -1,3 +1,3 @@
 #!/bin/bash
-message=`git diff`
+message=`git status`
 echo $message;
