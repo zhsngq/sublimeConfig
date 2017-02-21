@@ -2,7 +2,7 @@
 source t.sh
 
 message=$(git status)
-res=$(expr index '${message}' 'nothing to commit')
+res=$(expr index '${message}' 'Changes')
 if test ${res}=='0' 
     then 
         gitCommit
