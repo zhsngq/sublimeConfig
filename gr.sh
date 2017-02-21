@@ -2,10 +2,8 @@
 source t.sh
 
 message=$(git status)
-echo ${message}
-res=$(equals "nothing to commit" ${message})
-echo ${res}
-if test ${res}=='N' 
+res=$(expr index '${message}' 'nothing to commit')
+if test ${res}=='0' 
     then 
         gitCommit
     else 
