@@ -9,7 +9,8 @@ if [ "${res}" == "Y" ]
     then 
         echo 'set message ..'
         read commitMessage
-        $(gitCommit $commitMessage)
+        res=$(gitCommit $commitMessage)
+        echo $res
     else 
         echo 'no change'
 fi
