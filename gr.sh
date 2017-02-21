@@ -15,6 +15,7 @@ if test a=b
 then 
     gitCommit
 else 
+    echo '[ERROR] conflict'
     git stash && 
     git pull 
     git stash pop 
