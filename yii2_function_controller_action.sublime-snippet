@@ -1,6 +1,5 @@
 <snippet>
     <content><![CDATA[
-        sd
 public function action${1:this}()
 {
     \$this->render('${1:this}', array(
