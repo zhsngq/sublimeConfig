@@ -13,13 +13,19 @@ function gitCommit() {
     read commitMessage
     git add . &&
     git commit -m $commitMessage &&
-    git push &&
-    echo '[OK] sublimt git' 
+    message=$(git push)
+    res=$(equals 'rejected' "${message}") 
+    if [ "${res}" == "Y" ] 
+    then 
+        gitConflict
+    else 
+        echo '[OK] sublimt git' 
+    fi
 }
 
 function gitConflict(){
     git stash &&
     git pull &&
-    git stash pop
+    git stash pop && 
     echo '[ERROR] git Conflict'
 }
