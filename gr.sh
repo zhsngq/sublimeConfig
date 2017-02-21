@@ -9,14 +9,14 @@ function gitCommit() {
 }
 echo 'update...' 
 message=(`git pull`)
-a="Already"
-b=${message[0]}
-if test a=b
+if [[ ${message[0]}=="Already"]] 
 then 
-    gitCommit
+    echo 'no update'
+    # gitCommit
 else 
-    git stash &&
-    git pull &&
-    git stash pop
-    gitCommit
+    echo 'update'
+    # git stash &&
+    # git pull &&
+    # git stash pop
+    # gitCommit
 fi
