@@ -5,6 +5,5 @@ message=`git status`
 res=`equals "nothing to commit" $message`
 if test $res=='N' 
     then 
-        res=`gitCommit`
-        echo $res
+        gitCommit
 fi
