@@ -12,6 +12,9 @@ message=(`git pull`)
 if [ "$message[0]"x = "Updating"x ]; then 
     git stash && 
     git pull &&
-    git stash pop
+    git stash pop &&
+    gitCommit 
+else 
+    gitCommit
 fi
-gitCommit
+
