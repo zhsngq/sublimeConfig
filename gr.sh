@@ -7,11 +7,11 @@ function gitCommit() {
 }
 echo 'update...' 
 message=(`git pull`)
+echo "-----------> ${message}"
 if [ "$message[0]"x = "Updating"x ]; then 
-    gitCommit
-else
-# 冲突
     git stash && 
     git pull &&
     git stash pop
+else
+    gitCommit
 fi
