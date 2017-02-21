@@ -1,6 +1,10 @@
 <snippet>
     <content><![CDATA[
+<<<<<<< HEAD
         
+=======
+we
+>>>>>>> 0e31788f00628858f85dd7192bee0e17fdb7b85e
 public function action${1:this}()
 {
     \$this->render('${1:this}', array(
