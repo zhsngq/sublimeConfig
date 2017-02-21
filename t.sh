@@ -9,12 +9,9 @@ function equals (){
 }
 
 function gitCommit() {
-    echo 'set message ..'
-    read commitMessage
     git add . &&
     git commit -m $commitMessage &&
     message=$(git push)
-    echo "---$message---"
     res=$(equals 'rejected' "${message}") 
     if [ "${res}" == "Y" ] 
     then 
