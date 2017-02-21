@@ -28,4 +28,5 @@ function gitConflict(){
     git pull &&
     git stash pop && 
     echo '[ERROR] git Conflict'
+    git status
 }
