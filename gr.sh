@@ -5,7 +5,7 @@ message=$(git status)
 echo $message
 res=$(equals 'Changes' "${message}")
 echo $res
-if test "${res}"=="Y"
+if [ "${res}" == "Y" ] 
     then 
         gitCommit
     else 
