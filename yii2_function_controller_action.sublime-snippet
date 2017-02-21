@@ -1,6 +1,10 @@
 <snippet>
     <content><![CDATA[
+<<<<<<< Updated upstream
 ttttgttttt
+=======
+ttttstt
+>>>>>>> Stashed changes
 public function action${1:this}()
 {
     \$this->render('${1:this}', array(
