@@ -17,6 +17,6 @@ then
 else 
     git stash &&
     git pull &&
-    git stash pop &&
+    git stash pop
     gitCommit
 fi
