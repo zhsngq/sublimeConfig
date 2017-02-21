@@ -3,9 +3,9 @@ source t.sh
 
 message=$(git status)
 echo $message
-res=$(expr index '${message}' 'Changes')
+res=$(equals 'Changes' "${message}")
 echo $res
-if test ${res}=='0' 
+if test ${res}=='Y' 
     then 
         gitCommit
     else 
