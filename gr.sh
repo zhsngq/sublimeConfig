@@ -5,7 +5,7 @@ function gitCommit() {
     read message &&
     git commit -m '$message' &&
     git push && 
-    echo 'OK'
+    echo '[OK] sublimt git'
 }
 echo 'update...' 
 message=(`git pull`)
