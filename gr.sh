@@ -9,7 +9,7 @@ function gitCommit() {
 }
 echo 'update...' 
 message=(`git pull`)
-if test $message[0] -eq "Updating" 
+if test $message[0] -eq "Already"
 then 
     git stash && 
     git pull 
@@ -18,4 +18,3 @@ then
 else 
     gitCommit
 fi
-
