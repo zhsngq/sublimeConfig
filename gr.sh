@@ -1,9 +1,9 @@
 #!/bin/bash
 function gitCommit() {
-    git add . &&
+    git add . 
     echo 'set message ..'
     read commitMessage
-    git commit -m '$commitMessage' &&
+    git commit -m '$commitMessage' 
     git push && 
     echo '[OK] sublimt git'
 }
@@ -15,7 +15,7 @@ if test a=b
 then 
     gitCommit
 else 
-    git stash && 
+    git stash  
     git pull 
     git stash pop 
     gitCommit
