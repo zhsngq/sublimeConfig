@@ -1,15 +1,14 @@
 #!/bin/bash
 source t.sh
 
-message=$(git status)
-echo $message
-res=$(equals 'Changes' "${message}")
-echo $res
+message=`git status`
+res=`equals 'Changes' "${message}"`
+unset message
 if [ "${res}" == "Y" ] 
     then 
         echo 'set message ..'
-        read commitMessage
-        res=$(gitCommit $commitMessage)
+        read message
+        res=`gitCommit $message`
         echo $res
     else 
         echo 'no change'

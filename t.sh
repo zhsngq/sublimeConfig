@@ -10,15 +10,13 @@ function equals (){
 
 function gitCommit() {
     git add . &&
-    git commit -m $commitMessage
-    git push
-    echo '-------------->'
-    echo $message
-    res=$(equals "modified" "$message") 
-    echo $res
+    git commit -m $message
+    unset message
+    message=`git push`
+    res=`equals "modified" "$message"`
     if [ "${res}" == "Y" ] 
     then 
-        echo $(gitConflict)
+        echo `gitConflict`
     else 
         echo '[OK] sublimt git' 
     fi
