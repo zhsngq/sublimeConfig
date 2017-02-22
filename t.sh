@@ -11,10 +11,10 @@ function equals (){
 function gitCommit() {
     git add . &&
     git commit -m $commitMessage
-    pushMes=$(git push)
+    git push
     echo '-------------->'
-    echo $pushMes
-    res=$(equals "modified" $pushMes) 
+    echo $message
+    res=$(equals "modified" $message) 
     echo $res
     if [ "${res}" == "Y" ] 
     then 
