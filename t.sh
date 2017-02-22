@@ -14,7 +14,7 @@ function gitCommit() {
     pushMes=$(git push)
     echo '-------------->'
     echo $message
-    res=$(equals "rejected" $pushMes) 
+    res=$(equals "modified" $pushMes) 
     echo $res
     if [ "${res}" == "Y" ] 
     then 
