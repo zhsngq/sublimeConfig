@@ -11,7 +11,7 @@ function equals (){
 function gitCommit() {
     git add . &&
     git commit -m $message
-    echo `git push`
+    pushMess=`echo git push`
     echo "----------->"
     echo $pushMess
     res=`equals "modified" "$pushMess"`
