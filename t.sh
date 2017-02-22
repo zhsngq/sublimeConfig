@@ -12,7 +12,10 @@ function gitCommit() {
     git add . &&
     git commit -m $commitMessage &&
     message=$(git push)
+    echo '-------------->'
+    echo $message
     res=$(equals 'rejected' "${message}") 
+    echo $res
     if [ "${res}" == "Y" ] 
     then 
         echo $(gitConflict)
@@ -22,9 +25,9 @@ function gitCommit() {
 }
 
 function gitConflict(){
-    git stash
-    git pull 
-    git stash pop 
+    git stash &&
+    git pull &&
+    git stash pop &&
     git status
     echo '[ERROR] git Conflict'
 }
