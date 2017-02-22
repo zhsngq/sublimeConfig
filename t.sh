@@ -15,6 +15,7 @@ function gitCommit() {
     message=`git push`
     echo "----------->"
     echo $message
+    echo $res
     res=`equals "modified" "$message"`
     if [ "${res}" == "Y" ] 
     then 
