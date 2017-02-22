@@ -1,6 +1,10 @@
 <snippet>
     <content><![CDATA[
+<<<<<<< HEAD
         asss
+=======
+hg
+>>>>>>> 55826bb1add741f69a7f58803f72eb8da4ff81be
 public function action${1:this}()
 {
     \$this->render('${1:this}', array(
