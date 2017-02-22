@@ -10,7 +10,7 @@ function equals (){
 
 function gitCommit() {
     git add . &&
-    git commit -m $commitMessage &&
+    git commit -m $commitMessage
     message=$(git push)
     echo '-------------->'
     echo $message
