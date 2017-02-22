@@ -15,16 +15,15 @@ function gitCommit() {
     res=$(equals 'rejected' "${message}") 
     if [ "${res}" == "Y" ] 
     then 
-        echo `gitConflict`
+        echo $(gitConflict)
     else 
         echo '[OK] sublimt git' 
     fi
 }
 
 function gitConflict(){
-    echo '-------------> pop'
-    git stash &&
-    git pull &&
+    git stash
+    git pull 
     git stash pop 
     git status
     echo '[ERROR] git Conflict'
