@@ -11,7 +11,7 @@ function equals (){
 function gitCommit() {
     git add . &&
     git commit -m $commitMessage
-    message=$(git push)
+    message=`git push`
     echo '-------------->'
     echo $message
     res=$(equals 'rejected' "${message}") 
