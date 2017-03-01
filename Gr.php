@@ -44,6 +44,7 @@ class Gr {
 
 	function runCommend($commend) {
 		$this->res = system($commend);
+		var_dump($this->res);
 	}
 
 	function gitStash () {
@@ -59,7 +60,6 @@ class Gr {
 	function gitCommit() {
 		$this->runCommend('git add .');
 		$this->runCommend('git commit -m "test"');
-		$gitPush = $this->runCommend('git push');
 	}
 
 }
