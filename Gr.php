@@ -43,7 +43,7 @@ class Gr {
 	}
 
 	function runCommend($commend) {
-		$this->res = system($commend);
+		$this->res = shell_exec($commend);
 		echo "{$commend} ====> \n";
 		var_dump($this->res);
 	}
