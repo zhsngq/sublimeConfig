@@ -35,6 +35,9 @@ class Gr {
 		$this->isCommit = !empty($matches);
 		if ($this->isCommit) {
 			$this->gitCommit();
+			if (is_null($this->res)) {
+				$this->gitStash();
+			}
 		}
 	}
 
@@ -42,6 +45,16 @@ class Gr {
 		echo "{$commend} ... \n";
 		$this->res = shell_exec($commend);
 		return $this;
+	}
+
+	function gitStash () {
+		$this->runCommend('git stash');
+		$this->runCommend('git pull');
+		$this->runCommend('git stash pop');
+		$this->gitCommit();
+		if (is_null($this->res)) {
+			echo "Error";
+		}
 	}
 
 	function gitCommit() {
