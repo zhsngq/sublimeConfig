@@ -61,6 +61,7 @@ class Gr {
 	function gitCommit() {
 		$this->runCommend('git add .');
 		$this->runCommend('git commit -m "test"');
+		$this->runCommend('git push');
 	}
 
 }
