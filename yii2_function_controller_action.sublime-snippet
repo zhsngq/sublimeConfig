@@ -1,10 +1,5 @@
 <snippet>
     <content><![CDATA[
-<<<<<<< HEAD
-        ds
-=======
-    12
->>>>>>> 7d142112796cc4bc41be21125364e355d2b5b4ff
 public function action${1:this}()
 {
     \$this->render('${1:this}', array(
