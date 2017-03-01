@@ -23,8 +23,31 @@ class Gr {
 	 */
 	public $isMerge;
 
+	/**
+	 * [$res 命令结果]
+	 * @var [type]
+	 */
+	public $res;
+
 	function __construct() {
-		$this->message = shell_exec('git status');
+		$this->runCommend('git status');
+		preg_match('/["].*["]/', $this->res, $matches);
+		$this->isCommit = !empty($matches);
+		if ($this->isCommit) {
+			$this->gitCommit();
+		}
+	}
+
+	function runCommend($commend) {
+		$this->res = shell_exec($commend);
+		return $this;
+	}
+
+	function gitCommit() {
+		$this->runCommend('git add .');
+		$this->runCommend('git commit -m "test"');
+		$this->runCommend('git push');
+		var_dump($this->res);
 	}
 
 	/**
@@ -44,6 +67,18 @@ class Gr {
 
 	modified:   Gr.php
 
+	On branch master
+	Your branch is up-to-date with 'origin/master'.
+	Changes not staged for commit:
+	(use "git add/rm <file>..." to update what will be committed)
+	(use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    gr.sh
+	deleted:    t.sh
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+
+
 	 *
 	 * @return [type] [description]
 	 */
@@ -53,23 +88,10 @@ class Gr {
 	}
 
 	function run() {
-
 	}
 
 }
 
-// $gt = new Gr();
-// $gt->run();
-// echo "string";
-// 测试正则匹配
-
-$regex = '/HELLO/';
-$str = 'hello word';
-
-preg_match($regex, $str, $matches);
-
-foreach ($matches as $key => $value) {
-	echo "{$value}\n";
-}
+$gt = new Gr();
 
 ?>
