@@ -39,7 +39,9 @@ class Gr {
 	}
 
 	function runCommend($commend) {
+		echo "{$commend} ... \n";
 		$this->res = shell_exec($commend);
+		var_dump($this->res);
 		return $this;
 	}
 
@@ -47,7 +49,6 @@ class Gr {
 		$this->runCommend('git add .');
 		$this->runCommend('git commit -m "test"');
 		$this->runCommend('git push');
-		var_dump($this->res);
 	}
 
 }
