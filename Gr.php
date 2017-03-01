@@ -35,6 +35,7 @@ class Gr {
 		$this->isCommit = !empty($matches);
 		if ($this->isCommit) {
 			$this->gitCommit();
+			var_dump($this->res);
 			if (is_null($this->res)) {
 				$this->gitStash();
 			}
