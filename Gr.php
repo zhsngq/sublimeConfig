@@ -44,6 +44,7 @@ class Gr {
 
 	function runCommend($commend) {
 		$this->res = system($commend);
+		echo "{$commend} ====> \n";
 		var_dump($this->res);
 	}
 
