@@ -58,8 +58,9 @@ class Gr {
 	function gitCommit() {
 		$this->runCommend('git add .');
 		$this->runCommend('git commit -m "test"');
-		$this->runCommend('git push');
-		var_dump($this->res);
+		$gitPush = $this->runCommend('git push');
+		echo "----start---";
+		var_dump($gitPush);
 	}
 
 }
