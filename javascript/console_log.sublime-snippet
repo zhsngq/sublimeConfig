@@ -1,14 +1,9 @@
 <snippet>
     <content><![CDATA[
-public function action${1:this}()
-{
-    \$this->render('${1:this}', array(
-        'model' => \$model,
-    ));
-}
+console.log(${1:this});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>action</tabTrigger>
+    <tabTrigger>cl</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <!-- <scope>source.python</scope> -->
+    <scope>source.js</scope>
 </snippet>
