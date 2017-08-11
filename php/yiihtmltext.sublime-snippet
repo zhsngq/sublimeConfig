@@ -1,16 +1,15 @@
 <snippet>
     <content><![CDATA[
 <div class="form-group">
-    <label class="col-md-2 control-label"><?php echo \$form->label(\$model,'${1:this}') ?>
-    <span class="required" aria-required="true">*</span></label>
-    <div class="col-md-4">
-        <?php \$this->widget('FileUpload',array('model'=>\$model,'attribute'=>'${1:this}','inputName'=>'${1:this}','width'=>'150','height'=>'150','removeCallback'=>"\$('#avatar').html('')")); ?>
+    <label class="col-md-2 control-label"><?php echo \$form->label(\$model,'${1:this}') ?></label>
+    <div class="col-md-8" style="width: 750px;">
+        <?php echo \$form->textArea(\$model, '${1:this}'); ?>
     </div>
     <div class="col-md-2"><?php echo \$form->error(\$model, '${1:this}') ?></div>
 </div>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>yiifile</tabTrigger>
+    <tabTrigger>yiitext</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.php</scope>
 </snippet>
