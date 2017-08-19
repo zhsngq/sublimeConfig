@@ -1,5 +1,9 @@
 <snippet>
     <content><![CDATA[
+<?php \$this->widget('ext.ueditor.UeditorWidget', array(
+    'id' => CHtml::activeId(\$model,'${1:this}'),
+    'initialFrameWidth' => '750px'
+)); ?>
 <div class="form-group">
     <label class="col-md-2 control-label"><?php echo \$form->label(\$model,'${1:this}') ?></label>
     <div class="col-md-8" style="width: 750px;">
