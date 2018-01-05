@@ -1,0 +1,23 @@
+{
+    "working_dir": "$folder",
+    "variants":
+    [
+        {
+           "name": "状态",
+           "cmd": "git status",
+        },
+        {
+           "name": "提交",
+           "cmd" : ["start","bash","$packages\\User\\config\\shell\\test.sh"],
+           "shell" : true
+        },
+        {
+           "name": "更新",
+           "cmd": "git pull"
+        },
+        {
+           "name": "日志",
+           "cmd": "git log"
+        }
+    ]
+}

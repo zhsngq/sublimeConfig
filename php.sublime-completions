@@ -1,0 +1,28 @@
+{
+   "scope": "source.php",
+   "completions":
+   [
+
+     // yii 打印日志
+      { "trigger": "logyii", "contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
+      // 时间戳转化时间
+      ,{ "trigger": "datefmt", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
+      // 时间转化时间戳,
+      ,{ "trigger": "timefmt", "contents": "strtotime('${1:Y-m-d}')" }
+
+      // php
+      ,"abstract","public","__construct","private","function","property_exists","instanceof","Exception","protected"
+      // yii1
+      ,"condition","findByAttributes","findByPk","findAll","findAllByAttributes","findAllBySql","scopes","compare('name',$value,true)"
+      ,"pagination","pageSize"
+      ,"getIsNewRecord","getTableAlias","beforeValidate","behaviors","application"
+      ,"HAS_MANY","HAS_ONE","with","relations"
+      ,"CDbCriteria","getDbCriteria()->mergeWith"
+      ,"addCondition('id=1'); "
+      ,"addInCondition('id', array(1,2,3,4,5));"
+      ,"addNotInCondition('id',array(1,2,3,4,5));"
+      ,"addCondition('id=1','OR');"
+      ,"addSearchCondition('name','分类');"
+      ,"addBetweenCondition('id', 1, 4);"
+   ]
+}
