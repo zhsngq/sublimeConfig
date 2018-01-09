@@ -1,11 +1,9 @@
 {
     "working_dir": "$folder",
+    // "target": "状态",
+    "cmd": "git status",
     "variants":
     [
-        {
-           "name": "状态",
-           "cmd": "git status",
-        },
         {
            "name": "提交",
            "cmd" : ["start","bash","$packages\\User\\config\\shell\\test.sh"],
