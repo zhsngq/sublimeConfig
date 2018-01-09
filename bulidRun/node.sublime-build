@@ -1,4 +1,11 @@
 {
-    "cmd": ["node", "$file"],
-    "selector": "source.js"
+    "cmd": ["nodejs", "$file"],
+    "selector": "source.js",
+    "variants":
+    [
+        {
+           "name": "run es6",
+           "cmd": ["node", "--use-strict", "--harmony", "$file"],
+        },
+    ]
 }
