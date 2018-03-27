@@ -1,5 +1,5 @@
 {
     // "target": "状态",
     "selector": "source.php",
-    "cmd": ["tail","-f","D:/php_errors.log"],
+    "cmd": ["tail","-f","$project_path\\php_errors.log"],
 }

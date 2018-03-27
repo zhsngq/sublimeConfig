@@ -2,17 +2,20 @@
    "scope": "source.php",
    "completions":
    [
-
-     // yii 打印日志
+      // base
       { "trigger": "logyii", "contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
-      // 时间戳转化时间
-      ,{ "trigger": "datefmt", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
-      // 时间转化时间戳,
-      ,{ "trigger": "timefmt", "contents": "strtotime('${1:Y-m-d}')" }
+      ,{ "trigger": "time 时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
+      ,{ "trigger": "time 时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
+      ,{ "trigger": "str 数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
+      ,{ "trigger": "str 字符转数组", "contents": "explode(',', ${1:String})"}
+      ,{ "trigger": "str 字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
+      ,{ "trigger": "array_merge 上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
 
-      // php
-      ,"abstract","public","__construct","private","function","property_exists","instanceof","Exception","protected"
-      // yii1
+      //base
+      ,"abstract","extends","public","__construct","private","function","property_exists","instanceof","Exception","protected"
+
+
+      // yii
       ,"condition","findByAttributes","findByPk","findAll","findAllByAttributes","findAllBySql","scopes","compare('name',$value,true)"
       ,"pagination","pageSize"
       ,"getIsNewRecord","getTableAlias","beforeValidate","behaviors","application"

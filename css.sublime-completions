@@ -1,0 +1,7 @@
+{
+   "scope": "source.css",
+   "completions":
+   [
+      { "trigger": "text-center 文本居中", "contents": "text-align: center;" }
+   ]
+}
