@@ -1,0 +1,8 @@
+{
+   "scope": "source.js",
+   "completions":
+   [
+      // base
+      { "trigger": "json 字符串转对象", "contents": "eval('(' + ${1:timeStamp} + ')')" }
+   ]
+}
