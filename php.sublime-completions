@@ -13,7 +13,7 @@
 
       //base
       ,"abstract","extends","public","__construct","private","function","property_exists","instanceof","Exception","protected"
-      ,"file_get_contents","file_put_contents","serialize","unserialize"
+      ,"file_get_contents","file_put_contents","serialize","unserialize","var_dump"
 
 
       // yii
