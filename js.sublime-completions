@@ -4,5 +4,6 @@
    [
       // base
       { "trigger": "json 字符串转对象", "contents": "eval('(' + ${1:timeStamp} + ')')" }
+      { "trigger": "json 对象字符串转", "contents": "JSON.stringify(${1:obj})" }
    ]
 }

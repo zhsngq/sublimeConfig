@@ -10,10 +10,11 @@
       ,{ "trigger": "str 字符转数组", "contents": "explode(',', ${1:String})"}
       ,{ "trigger": "str 字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
       ,{ "trigger": "array_merge 上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
+      ,{ "trigger": "var_dump", "contents": "var_dump(${1:Array});die;"}
 
       //base
       ,"abstract","extends","public","__construct","private","function","property_exists","instanceof","Exception","protected"
-      ,"file_get_contents","file_put_contents","serialize","unserialize","var_dump"
+      ,"file_get_contents","file_put_contents","serialize","unserialize"
 
 
       // yii
