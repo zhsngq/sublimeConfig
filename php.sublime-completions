@@ -2,7 +2,6 @@
    "scope": "source.php",
    "completions":
    [
-      // base
       { "trigger": "logyii", "contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
       ,{ "trigger": "time 时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
       ,{ "trigger": "time 时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
@@ -10,24 +9,15 @@
       ,{ "trigger": "str 字符转数组", "contents": "explode(',', ${1:String})"}
       ,{ "trigger": "str 字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
       ,{ "trigger": "array_merge 上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
-      ,{ "trigger": "var_dump", "contents": "var_dump(${1:Array});die;"}
+      ,{ "trigger": "var_dump die", "contents": "var_dump(${1:Array});die;"}
+      ,{ "trigger": "php 标签", "contents": "<?php ${1:content} ?>"}
 
-      //base
-      ,"abstract","extends","public","__construct","private","function","property_exists","instanceof","Exception","protected"
-      ,"file_get_contents","file_put_contents","serialize","unserialize"
-
-
-      // yii
-      ,"condition","findByAttributes","findByPk","findAll","findAllByAttributes","findAllBySql","scopes","compare('name',$value,true)"
-      ,"pagination","pageSize"
-      ,"getIsNewRecord","getTableAlias","beforeValidate","behaviors","application"
-      ,"HAS_MANY","HAS_ONE","with","relations"
-      ,"CDbCriteria","getDbCriteria()->mergeWith"
-      ,"addCondition('id=1'); "
-      ,"addInCondition('id', array(1,2,3,4,5));"
-      ,"addNotInCondition('id',array(1,2,3,4,5));"
-      ,"addCondition('id=1','OR');"
-      ,"addSearchCondition('name','分类');"
-      ,"addBetweenCondition('id', 1, 4);"
+      ,{ "trigger": "add yii", "contents": "addInCondition"}
+      ,{ "trigger": "add yii", "contents": "addInCondition('id',${1:Array} );"}
+      ,{ "trigger": "add yii", "contents": "addSearchCondition('id',${1:string} );"}
+      ,{ "trigger": "add yii", "contents": "addBetweenCondition('id',${1:string},${1:string});"}
+      ,{ "trigger": "find yii", "contents": "findByAttributes(${1:Array});"}
+      ,{ "trigger": "find yii", "contents": "findAllByAttributes(${1:Array});"}
+      ,{ "trigger": "find yii", "contents": "findByPk(${1:id});"}
    ]
 }
