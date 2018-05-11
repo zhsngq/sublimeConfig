@@ -12,12 +12,12 @@
       ,{ "trigger": "var_dump die", "contents": "var_dump(${1:Array});die;"}
       ,{ "trigger": "php 标签", "contents": "<?php ${1:content} ?>"}
 
-      ,{ "trigger": "add yii", "contents": "addInCondition"}
-      ,{ "trigger": "add yii", "contents": "addInCondition('id',${1:Array} );"}
-      ,{ "trigger": "add yii", "contents": "addSearchCondition('id',${1:string} );"}
-      ,{ "trigger": "add yii", "contents": "addBetweenCondition('id',${1:string},${1:string});"}
-      ,{ "trigger": "find yii", "contents": "findByAttributes(${1:Array});"}
-      ,{ "trigger": "find yii", "contents": "findAllByAttributes(${1:Array});"}
-      ,{ "trigger": "find yii", "contents": "findByPk(${1:id});"}
+      ,{ "trigger": "add yii addInCondition", "contents": "addInCondition"}
+      ,{ "trigger": "add yii addInCondition", "contents": "addInCondition('id',${1:Array} );"}
+      ,{ "trigger": "add yii addSearchCondition", "contents": "addSearchCondition('id',${1:string} );"}
+      ,{ "trigger": "add yii addBetweenCondition", "contents": "addBetweenCondition('id',${1:string},${2:string});"}
+      ,{ "trigger": "find yii findByAttributes", "contents": "findByAttributes(${1:Array});"}
+      ,{ "trigger": "find yii findAllByAttributes", "contents": "findAllByAttributes(${1:Array});"}
+      ,{ "trigger": "find yii findByPk", "contents": "findByPk(${1:id});"}
    ]
 }
