@@ -19,5 +19,6 @@
       ,{ "trigger": "find yii findByAttributes", "contents": "findByAttributes(${1:Array});"}
       ,{ "trigger": "find yii findAllByAttributes", "contents": "findAllByAttributes(${1:Array});"}
       ,{ "trigger": "find yii findByPk", "contents": "findByPk(${1:id});"}
+      ,{ "trigger": "arr 返回指定列", "contents": "array_column(${1:array},${2:string})"}
    ]
 }
