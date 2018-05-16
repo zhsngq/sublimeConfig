@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 <div class="form-group">
-    <label class="col-md-2 control-label"><?php echo \$form->label(\$model,'${1:this}') ?>
+    <?php echo \$form->labelEx(\$model,'${1:this}', ['class' => 'col-md-2 control-label']); ?>
     <span class="required" aria-required="true">*</span></label>
     <div class="col-md-4">
         <?php \$this->widget('FileUpload',array('model'=>\$model,'attribute'=>'${1:this}','inputName'=>'${1:this}','width'=>'150','height'=>'150','removeCallback'=>"\$('#avatar').html('')")); ?>

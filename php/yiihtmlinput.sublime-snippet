@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 <div class="form-group">
-    <label class="col-md-2 control-label"><?php echo \$form->label(\$model, '${1:this}') ?></label>
+    <?php echo \$form->labelEx(\$model,'${1:this}', ['class' => 'col-md-2 control-label']); ?>
     <div class="col-md-4">
         <?php echo \$form->textField(\$model, '${1:this}', array('class'=>'form-control')); ?>
     </div>
