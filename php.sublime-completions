@@ -11,6 +11,7 @@
       ,{ "trigger": "array_merge 上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
       ,{ "trigger": "var_dump die", "contents": "var_dump(${1:Array});die;"}
       ,{ "trigger": "php 标签", "contents": "<?php ${1:content} ?>"}
+      ,{ "trigger": "class 属性是否存在", "contents": "property_exists(${1:Calss},${1:String})"}
 
       ,{ "trigger": "add yii addInCondition", "contents": "addInCondition"}
       ,{ "trigger": "add yii addInCondition", "contents": "addInCondition('id',${1:Array} );"}
