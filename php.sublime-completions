@@ -11,14 +11,14 @@
       ,{ "trigger": "array_merge 上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
       ,{ "trigger": "var_dump die", "contents": "var_dump(${1:Array});die;"}
       ,{ "trigger": "php 标签", "contents": "<?php ${1:content} ?>"}
-      ,{ "trigger": "class 属性是否存在", "contents": "property_exists(${1:Calss},${1:String})"}
+      ,{ "trigger": "class 属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
 
       ,{ "trigger": "add yii addInCondition", "contents": "addInCondition"}
       ,{ "trigger": "add yii addInCondition", "contents": "addInCondition('id',${1:Array} );"}
       ,{ "trigger": "add yii addSearchCondition", "contents": "addSearchCondition('id',${1:string} );"}
       ,{ "trigger": "add yii addBetweenCondition", "contents": "addBetweenCondition('id',${1:string},${2:string});"}
-      ,{ "trigger": "find yii findByAttributes", "contents": "findByAttributes(${1:Array});"}
-      ,{ "trigger": "find yii findAllByAttributes", "contents": "findAllByAttributes(${1:Array});"}
+      ,{ "trigger": "find yii findByAttributes", "contents": "findByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
+      ,{ "trigger": "find yii findAllByAttributes", "contents": "findAllByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
       ,{ "trigger": "find yii findByPk", "contents": "findByPk(${1:id});"}
       ,{ "trigger": "arr 返回指定列", "contents": "array_column(${1:array},${2:string})"}
    ]
