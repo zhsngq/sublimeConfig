@@ -7,5 +7,13 @@
            "name": "run es6",
            "cmd": ["node", "--use-strict", "--harmony", "$file"],
         },
+        {
+           "name": "phantomjs",
+           "cmd": ["phantomjs", "$file"],
+        },
+        {
+           "name": "phantomjs exit",
+           "cmd": "taskkill /im phantomjs.exe /f",
+        },
     ]
 }
