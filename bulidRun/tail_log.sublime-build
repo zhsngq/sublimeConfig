@@ -1,0 +1,6 @@
+{
+    // "target": "状态",
+    "working_dir": "$folder",
+    "shell" : true,
+    "cmd" : ["start","git-bash","$packages\\User\\config\\shell\\tailPro.sh"],
+}
