@@ -1,0 +1,12 @@
+{
+   "scope": "source.css, source.less, source.scss, source.stylus",
+   "completions":
+   [
+      { "trigger": "img\t图片变灰", "contents": "filter: grayscale(1);" },
+      { "trigger": "flex\t布局", "contents": "display: flex;" },
+      { "trigger": "flex\t纵向排列", "contents": "flex-direction: column;" },
+      { "trigger": "flex\t横向排列", "contents": "flex-direction: row;" },
+      { "trigger": "flex\t对齐方式", "contents": "justify-content: center;" },
+      { "trigger": "flex\t剧中", "contents": "align-items: center;" },
+   ]
+}
