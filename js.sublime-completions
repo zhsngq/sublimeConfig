@@ -2,7 +2,8 @@
    "scope": "source.js",
    "completions":
    [
-      { "trigger": "json 字符串转对象", "contents": "eval('(' + ${1:timeStamp} + ')')" }
-      { "trigger": "json 对象字符串转", "contents": "JSON.stringify(${1:obj})" }
+      { "trigger": "Json\t 字符串转对象", "contents": "eval('(' + ${1:timeStamp} + ')')" }
+      ,{ "trigger": "Json\t 对象字符串转", "contents": "JSON.stringify(${1:obj})" }
+      ,{ "trigger": "Log\t 日志", "contents": "console.log(${1:obj})" }
    ]
 }

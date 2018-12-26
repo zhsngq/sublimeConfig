@@ -2,8 +2,7 @@
    "scope": "source.php",
    "completions":
    [
-       { "trigger": "Logyii\tYii","contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
-      ,{ "trigger": "Time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
+      { "trigger": "Time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
       ,{ "trigger": "Time\t时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
       ,{ "trigger": "Str\t数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
       ,{ "trigger": "Str\t字符转数组", "contents": "explode(',', ${1:String})"}
