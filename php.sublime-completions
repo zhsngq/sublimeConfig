@@ -2,38 +2,39 @@
    "scope": "source.php",
    "completions":
    [
-       { "trigger": "logyii\tYii","contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
-      ,{ "trigger": "time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
-      ,{ "trigger": "time\t时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
-      ,{ "trigger": "str\t数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
-      ,{ "trigger": "str\t字符转数组", "contents": "explode(',', ${1:String})"}
-      ,{ "trigger": "str\t字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
-      ,{ "trigger": "array\tmerge上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
-      ,{ "trigger": "var\tvardump", "contents": "var_dump(${1:Array});die;"}
-      ,{ "trigger": "php\t标签", "contents": "<?php ${1:content} ?>"}
-      ,{ "trigger": "class\t属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
-      ,{ "trigger": "add_yii_addInCondition", "contents": "addInCondition('id',${1:Array} );"}
-      ,{ "trigger": "add_yii_addSearchCondition", "contents": "addSearchCondition('id',${1:string} );"}
-      ,{ "trigger": "add_yii_addBetweenCondition", "contents": "addBetweenCondition('id',${1:string},${2:string});"}
-      ,{ "trigger": "find_yii_findByAttributes", "contents": "findByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
-      ,{ "trigger": "find_yii_findAllByAttributes", "contents": "findAllByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
-      ,{ "trigger": "find_yii_findByPk", "contents": "findByPk(${1:id});"}
-      ,{ "trigger": "arr\t返回指定列", "contents": "array_column(${1:array},${2:string})"}
+       { "trigger": "Logyii\tYii","contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
+      ,{ "trigger": "Time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
+      ,{ "trigger": "Time\t时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
+      ,{ "trigger": "Str\t数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
+      ,{ "trigger": "Str\t字符转数组", "contents": "explode(',', ${1:String})"}
+      ,{ "trigger": "Str\t字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
+      ,{ "trigger": "Array\tmerge上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
+      ,{ "trigger": "Var\tvardump", "contents": "var_dump(${1:Array});die;"}
+      ,{ "trigger": "Php\t标签", "contents": "<?php echo ${1:content} ?>"}
+      ,{ "trigger": "Class\t属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
+      ,{ "trigger": "Add_yii_addInCondition", "contents": "addInCondition('id',${1:Array} );"}
+      ,{ "trigger": "Add_yii_addSearchCondition", "contents": "addSearchCondition('id',${1:string} );"}
+      ,{ "trigger": "Add_yii_addBetweenCondition", "contents": "addBetweenCondition('id',${1:string},${2:string});"}
+      ,{ "trigger": "Find_yii_findByAttributes", "contents": "findByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
+      ,{ "trigger": "Find_yii_findAllByAttributes", "contents": "findAllByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
+      ,{ "trigger": "Find_yii_findByPk", "contents": "findByPk(${1:id});"}
+      ,{ "trigger": "Arr\t返回指定列", "contents": "array_column(${1:array},${2:string})"}
+
+      // yii2
+      ,{ "trigger": "Post\tyii2获取post参数", "contents": "\\$${1:string} = \\Yii::\\$app->request->post('${1:string}');"}
+      ,{ "trigger": "Ajax\tyii2", "contents": "\\Yii::\\$app->request->isAjax"}
+
 
       // php
-      ,"abstract","public","__construct","private","function","property_exists","instanceof","Exception","protected"
-      // yii1
-      ,"condition","findByAttributes","findByPk","findAll","findAllByAttributes","findAllBySql","scopes","compare('name',$value,true)"
-      ,"behaviors","relations","beforeValidate"
-      ,"pagination","pageSize"
-      ,"getIsNewRecord","getTableAlias","beforeValidate","behaviors","application"
-      ,"HAS_MANY","HAS_ONE","with","relations"
-      ,"CDbCriteria","getDbCriteria()->mergeWith"
-      ,"addCondition('id=1'); "
-      ,"addInCondition('id', array(1,2,3,4,5));"
-      ,"addNotInCondition('id',array(1,2,3,4,5));"
-      ,"addCondition('id=1','OR');"
-      ,"addSearchCondition('name','分类');"
-      ,"addBetweenCondition('id', 1, 4);"
+      ,"Abstract"
+      ,"Public"
+      ,"__construct"
+      ,"Private"
+      ,"Function"
+      ,"Property_exists"
+      ,"Instanceof"
+      ,"Exception"
+      ,"Protected"
+
    ]
 }
