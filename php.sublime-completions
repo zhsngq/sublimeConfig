@@ -2,24 +2,23 @@
    "scope": "source.php",
    "completions":
    [
-       { "trigger": "logyii","contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
-      ,{ "trigger": "time_时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
-      ,{ "trigger": "time_时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
-      ,{ "trigger": "str_数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
-      ,{ "trigger": "str_字符转数组", "contents": "explode(',', ${1:String})"}
-      ,{ "trigger": "str_字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
-      ,{ "trigger": "array_merge上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
-      ,{ "trigger": "var_dump_die", "contents": "var_dump(${1:Array});die;"}
-      ,{ "trigger": "php_标签", "contents": "<?php ${1:content} ?>"}
-      ,{ "trigger": "class_属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
-      ,{ "trigger": "add_yii_addInCondition", "contents": "addInCondition"}
+       { "trigger": "logyii\tYii","contents": "Yii::log(${1:str_message}, 'error', '${2:trigger}');" }
+      ,{ "trigger": "time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
+      ,{ "trigger": "time\t时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
+      ,{ "trigger": "str\t数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
+      ,{ "trigger": "str\t字符转数组", "contents": "explode(',', ${1:String})"}
+      ,{ "trigger": "str\t字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
+      ,{ "trigger": "array\tmerge上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
+      ,{ "trigger": "var\tvardump", "contents": "var_dump(${1:Array});die;"}
+      ,{ "trigger": "php\t标签", "contents": "<?php ${1:content} ?>"}
+      ,{ "trigger": "class\t属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
       ,{ "trigger": "add_yii_addInCondition", "contents": "addInCondition('id',${1:Array} );"}
       ,{ "trigger": "add_yii_addSearchCondition", "contents": "addSearchCondition('id',${1:string} );"}
       ,{ "trigger": "add_yii_addBetweenCondition", "contents": "addBetweenCondition('id',${1:string},${2:string});"}
       ,{ "trigger": "find_yii_findByAttributes", "contents": "findByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
       ,{ "trigger": "find_yii_findAllByAttributes", "contents": "findAllByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
       ,{ "trigger": "find_yii_findByPk", "contents": "findByPk(${1:id});"}
-      ,{ "trigger": "arr返回指定列", "contents": "array_column(${1:array},${2:string})"}
+      ,{ "trigger": "arr\t返回指定列", "contents": "array_column(${1:array},${2:string})"}
 
       // php
       ,"abstract","public","__construct","private","function","property_exists","instanceof","Exception","protected"

@@ -1,11 +1,23 @@
 {
     "cmd": ["nodejs", "$file"],
-    "selector": "source.js",
+    "selector": "source.js,source.tsx",
+    "working_dir": "$folder",
+    "env": {"PYTHONIOENCODING": "utf8"},
     "variants":
     [
         {
            "name": "run es6",
            "cmd": ["node", "--use-strict", "--harmony", "$file"],
+        },
+        {
+           "name": "npm start",
+           "cmd" : ["npm","start"],
+           "shell" : true
+        },
+        {
+           "name": "taro",
+           "cmd" : ["npm","run","dev:weapp"],
+           "shell" : true
         },
         {
            "name": "phantomjs",
