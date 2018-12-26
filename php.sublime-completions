@@ -12,13 +12,9 @@
       ,{ "trigger": "Var\tvardump", "contents": "var_dump(${1:Array});die;"}
       ,{ "trigger": "Php\t标签", "contents": "<?php echo ${1:content} ?>"}
       ,{ "trigger": "Class\t属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
-      ,{ "trigger": "Add_yii_addInCondition", "contents": "addInCondition('id',${1:Array} );"}
-      ,{ "trigger": "Add_yii_addSearchCondition", "contents": "addSearchCondition('id',${1:string} );"}
-      ,{ "trigger": "Add_yii_addBetweenCondition", "contents": "addBetweenCondition('id',${1:string},${2:string});"}
-      ,{ "trigger": "Find_yii_findByAttributes", "contents": "findByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
-      ,{ "trigger": "Find_yii_findAllByAttributes", "contents": "findAllByAttributes([\n\t'${1:String}'=>${2:var}\n]);"}
-      ,{ "trigger": "Find_yii_findByPk", "contents": "findByPk(${1:id});"}
       ,{ "trigger": "Arr\t返回指定列", "contents": "array_column(${1:array},${2:string})"}
+      ,{ "trigger": "Log\tPHP基础", "contents": "error_log(json_encode(${1:Object}).\"\\n\\t\", 3, __DIR__.\"/my-errors.log\");"}
+
 
       // yii2
       ,{ "trigger": "Post\tyii2获取post参数", "contents": "\\$${1:string} = \\Yii::\\$app->request->post('${1:string}');"}
