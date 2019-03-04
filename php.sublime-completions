@@ -2,34 +2,34 @@
    "scope": "source.php",
    "completions":
    [
-      { "trigger": "Time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
-      ,{ "trigger": "Time\t时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
-      ,{ "trigger": "Str\t数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
-      ,{ "trigger": "Str\t字符转数组", "contents": "explode(',', ${1:String})"}
-      ,{ "trigger": "Str\t字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
-      ,{ "trigger": "Array\tmerge上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
-      ,{ "trigger": "Var\tvardump", "contents": "var_dump(${1:Array});die;"}
-      ,{ "trigger": "Php\t标签", "contents": "<?php echo ${1:content} ?>"}
-      ,{ "trigger": "Class\t属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
-      ,{ "trigger": "Arr\t返回指定列", "contents": "array_column(${1:array},${2:string})"}
-      ,{ "trigger": "Log\tPHP基础", "contents": "error_log(json_encode(${1:Object}).\"\\n\\t\", 3, __DIR__.\"/my-errors.log\");"}
+      { "trigger": "time\t时间戳转化时间", "contents": "date('Y-m-d H:i:s',${1:timeStamp})" }
+      ,{ "trigger": "time\t时间转化时间戳", "contents": "strtotime('${1:Y-m-d H:i:s}')"}
+      ,{ "trigger": "str\t数组转逗号分隔字符", "contents": "implode(',', ${1:Array})"}
+      ,{ "trigger": "str\t字符转数组", "contents": "explode(',', ${1:String})"}
+      ,{ "trigger": "str\t字符窜包含", "contents": "strpos('${1:String}','${2:String}') !== false"}
+      ,{ "trigger": "array\tmerge上面被覆盖", "contents": "array_merge(${1:Array}, ${2:Array})"}
+      ,{ "trigger": "var\tvardump", "contents": "var_dump(${1:Array});die;"}
+      ,{ "trigger": "php\t标签", "contents": "<?php echo ${1:content} ?>"}
+      ,{ "trigger": "class\t属性是否存在", "contents": "property_exists(${1:Calss},${2:String})"}
+      ,{ "trigger": "arr\t返回指定列", "contents": "array_column(${1:array},${2:string})"}
+      ,{ "trigger": "log\tPHP基础", "contents": "error_log(json_encode(${1:Object}).\"\\n\\t\", 3, __DIR__.\"/my-errors.log\");"}
 
 
       // yii2
-      ,{ "trigger": "Post\tyii2获取post参数", "contents": "\\$${1:string} = \\Yii::\\$app->request->post('${1:string}');"}
-      ,{ "trigger": "Ajax\tyii2", "contents": "\\Yii::\\$app->request->isAjax"}
+      ,{ "trigger": "post\tyii2获取post参数", "contents": "\\$${1:string} = \\Yii::\\$app->request->post('${1:string}');"}
+      ,{ "trigger": "ajax\tyii2", "contents": "\\Yii::\\$app->request->isAjax"}
 
 
       // php
-      ,"Abstract"
-      ,"Public"
+      ,"abstract"
+      ,"public"
       ,"__construct"
-      ,"Private"
-      ,"Function"
-      ,"Property_exists"
-      ,"Instanceof"
-      ,"Exception"
-      ,"Protected"
+      ,"private"
+      ,"function"
+      ,"property_exists"
+      ,"instanceof"
+      ,"exception"
+      ,"protected"
 
    ]
 }

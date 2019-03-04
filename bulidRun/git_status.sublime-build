@@ -16,6 +16,9 @@
         {
            "name": "日志",
            "cmd": "git log"
+        },{
+           "name": "撤销本地修改内容",
+           "cmd": "git checkout head ."
         }
     ]
 }
