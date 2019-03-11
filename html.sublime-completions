@@ -1,0 +1,10 @@
+{
+   "scope": "text.html - source - meta.tag, punctuation.definition.tag.begin",
+   "completions":
+   [
+      { "trigger": "vi\twx", "contents": "<view>$0</view>" }
+      ,{ "trigger": "vi\tWx", "contents": "<View>$0<View>" }
+      ,{ "trigger": "sc\tWx", "contents": "<scroll-view scrollY>$0</scroll-view>" }
+      ,"style"
+   ]
+}

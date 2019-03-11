@@ -8,5 +8,7 @@
       ,{ "trigger": "ibox\t横向排列", "contents": "flex-direction: row;" }
       ,{ "trigger": "ibox\t对齐方式", "contents": "justify-content: center;" }
       ,{ "trigger": "ibox\t剧中", "contents": "align-items: center;" }
+      ,{ "trigger": "bo\t圆角", "contents": "border-radius: 0.5rem;" }
+      ,{ "trigger": "img\t背景图片", "contents": "background:url(url) no-repeat center top;background-size: 1.2rem;" }
    ]
 }
