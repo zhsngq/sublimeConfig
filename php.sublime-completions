@@ -19,6 +19,15 @@
       ,{ "trigger": "post\tyii2获取post参数", "contents": "\\$${1:string} = \\Yii::\\$app->request->post('${1:string}');"}
       ,{ "trigger": "ajax\tyii2", "contents": "\\Yii::\\$app->request->isAjax"}
 
+      // pdo
+      ,{ "trigger": "wq_insert\twqing", "contents": "pdo_insert('${1:table_name}',${2:array} )"}
+      ,{ "trigger": "wq_insert_to_id\twqing", "contents": "pdo_insertid"}
+      ,{ "trigger": "wq_find_one_sql\twqing", "contents": "pdo_fetch(${1:sql})"}
+      ,{ "trigger": "wq_find_all\twqing", "contents": "pdo_getall('hc_dan', ${1:array}, ${2:array}, '', ${3:desc}, ${4:array_page});"}
+      ,{ "trigger": "wq_find_one\twqing", "contents": "pdo_get(${1:table_name},${2:array})"}
+      ,{ "trigger": "wq_updata\twqing", "contents": "pdo_update(${1:table_name},${2:array},${3:array_where})"}
+      ,{ "trigger": "wq_updata\twqing", "contents": "pdo_update({$1:table_name},${2:array},${3:array_where})"}
+
 
       // php
       ,"abstract"

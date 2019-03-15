@@ -3,7 +3,7 @@
    "completions":
    [
       { "trigger": "vi\twx", "contents": "<view>$0</view>" }
-      ,{ "trigger": "vi\tWx", "contents": "<View>$0<View>" }
+      ,{ "trigger": "vi\tWx", "contents": "<View>$0</View>" }
       ,{ "trigger": "sc\tWx", "contents": "<scroll-view scrollY>$0</scroll-view>" }
       ,"style"
    ]
