@@ -25,6 +25,7 @@
       ,{ "trigger": "wq_find_one_sql\twqing", "contents": "pdo_fetch(${1:sql})"}
       ,{ "trigger": "wq_find_all\twqing", "contents": "pdo_getall('hc_dan', ${1:array}, ${2:array}, '', ${3:desc}, ${4:array_page});"}
       ,{ "trigger": "wq_find_one\twqing", "contents": "pdo_get(${1:table_name},${2:array})"}
+      ,{ "trigger": "wq_del_one\twqing", "contents": "pdo_delete(${1:table_name},${2:array})"}
       ,{ "trigger": "wq_updata\twqing", "contents": "pdo_update(${1:table_name},${2:array},${3:array_where})"}
       ,{ "trigger": "wq_updata\twqing", "contents": "pdo_update({$1:table_name},${2:array},${3:array_where})"}
 
